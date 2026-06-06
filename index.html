@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Appointment Booking Form</h2>
+
+    <input type="text" id="name" placeholder="Customer Name" required>
+
+    <input type="text" id="phone" placeholder="Phone Number" required>
+
+    <input type="datetime-local" id="time"required>
+
+    <button onclick="saveAppointment()">
+        Book Appointment
+    </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
