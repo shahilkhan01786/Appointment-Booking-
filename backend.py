@@ -35,7 +35,7 @@ def parse_time(time_str):
 def reminder_worker():
     while True:
         try:
-            now = datetime.now()
+            now = datetime.utcnow() + timedelta(hours=5, minutes=30)
 
             appointments = supabase.table("Appointment") \
                 .select("*") \
